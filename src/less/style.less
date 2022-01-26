@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+//游戏的面板大小设置
+@gbg-width: 800px;
+@gbg-height: 800px;
+@gbg-bc: gray;
+#gameBackground {
+    inline-size: @gbg-width;
+    block-size: @gbg-height;
+    background-color: @gbg-bc;
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+//分数栏的大小设置
+@s-width: 796px;
+@s-height: 40px;
+@s-text-color: purple;
+@s-fsize: 2em;
+#score {
+    inline-size: @s-width;
+    block-size: @s-height;
+    font-size: @s-fsize;
+    font-weight: bold;
+    color: @s-text-color;
+    border: 2px solid seagreen;
+    position: relative;
+    top: 800px;
+}
+
+//'game over'面板设置
+@go-bc: black;
+@go-zindex: 5;
+#gameOverPanel {
+    width: inherit;
+    height: inherit;
+    opacity: 0.7;
+    background-color: @go-bc;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: @go-zindex;
+    visibility: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & {
+        //'GAME OVER'提示
+        @text-width: 200px;
+        @text-height: 200px;
+        @text-size: 4rem;
+        @text-color: tomato;
+        div:nth-child(2) {
+            width: @text-width;
+            height: @text-height;
+            font-size: @text-size; 
+            font-weight: bold;
+            color: @text-color;
+        }
+    }
+    & {
+        //分数结算
+        @s-text-width: 600px;
+        @s-text-height: 80px;
+        @s-text-size: 2rem;
+        @s-text-color: gainsboro;
+        div:nth-child(3) {
+            width: @s-text-width;
+            height: @s-text-height;
+            font-size: @s-text-size;
+            font-weight: bold;
+            color: @s-text-color;
+            text-align: center;
+        }
+    }
+    //结束原因
+    @fsize: 4em;
+    @mcolor: #1572A1; 
+    #msg {
+        font-size: @fsize;
+        color: @mcolor;
+        margin-bottom: 50px;
+    }
+}
+
+
+//restart按钮设置
+@rebtn-w: 70px;
+@rebtn-h: 160px;
+@rebtn-bgc: white;
+@rebtn-fsize: 2rem;
+@rebtn-line-height: @rebtn-w;
+#res {
+    height: @rebtn-w;
+    width: @rebtn-h;
+    background-color: @rebtn-bgc;
+    font-size: @rebtn-fsize;
+    font-weight: bold;
+    text-align: center;
+    line-height: @rebtn-line-height;
+    border-radius: 16px;
+    box-shadow: -4px 4px gray;
+    &:hover {
+        cursor: pointer;
+        color: blueviolet;
+    }
+}
