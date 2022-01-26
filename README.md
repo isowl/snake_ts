@@ -49,8 +49,8 @@ module.exports = {
 }
 ~~~
 
-![](./Screenshot_20220126_212527.png)
+<img src="./Screenshot_20220126_212527.png" alt="a" style="zoom:75%;" />
 
-![](./Screenshot_20220126_211713.png)
+<img src="./Screenshot_20220126_211713.png" alt="av" style="zoom:75%;" />
 
-![](./Screenshot_20220126_212631.png)
+<img src="./Screenshot_20220126_212631.png" style="zoom:75%;" />
