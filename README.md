@@ -1,12 +1,12 @@
 ## 对贪吃蛇游戏的改写（js -> ts)
 
-typescript: v4.5.4 
+<img src="https://img.shields.io/badge/typescript-v4.5.4-green">
 
-webpack: v5.66.0 
+<img src="https://img.shields.io/badge/webpack-v5.66.0-blue">
 
-webpack-cli: v4.9.1 
+<img src="https://img.shields.io/badge/webpack_cli-v4.9.1-blue">
 
-less: v4.1.2
+<img src="https://img.shields.io/badge/less-v4.1.2-ff69b4">
 
 ### webpack 配置
 
